@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Trivia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<html>
+
+<body>
+  <title>Awareness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+
+    <h1>Opioid Awareness</h1>
+    <nav>
+
+      <a href="index.html"> Home </a>
+      <a href="deaths.html"> Deaths </a>
+      <a href="help.html"> Where to find help </a>
+      <a href="risk.html"> Risks Assosiated </a>
+      <a href="trivia.html"> Trivia </a>
+
+
+      <!-- Translation button -->
+      <div id="google_translate_element" style="height: 15px; float: right;">
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+        </script>
+
+        <script type="text/javascript"
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+      </div>
+    </nav>
+
+    <center>
+      <h2>Live stat counter:</h2>
+      <div id="counter">
+        <!-- counts -->
+      </div>
+
+      <script>
+        let counts = setInterval(updated);
+        let upto = 0;
+        function updated() {
+          var count = document.getElementById("counter");
+          count.innerHTML = ++upto;
+          if (upto === 10000000000) {
+            clearInterval(counts);
+          }
+        }
+      </script>
+
+    </center>
+    <h2>Welcome to our Trivia section where you will get given question to answer about the harsh reality of opioid
+      addiction. Some of these answers can surprise you.</h2>
+
+    <trivia>
+    <h3>What is Opioid?</h3>
+    <form action="/action_page.php">
+      <label for="fname">Answer:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <h3>What is the opioid related death reate in your state</h3>
+  <form>
+  <input type="radio" value="10000">10000<br>
+  <input type="radio" value="20000">20000<br>
+  <input type="radio" value="30000">30000<br>
+  <input type="radio" value="40000">40000<br>
+  </form>
+</select>
+      
+      <h3>What is the average age for people to develop an opioid addiction</h3>
+    <form>
+  <input type="radio" value="10-20">10-20<br>
+  <input type="radio" value="20-30">20-30<br>
+  <input type="radio" value="30-40">30-40<br>
+  <input type="radio" value="40-50">40-50<br>
+  </form>
+
+     
+
+
+
+
+          </form>
+
+
+      </trivia>
+
+
+  </body>
+
+</html>
